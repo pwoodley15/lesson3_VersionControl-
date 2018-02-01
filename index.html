@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>INSERT YOUR NAME</title>
+    <title>Paul Woodley</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,19 +41,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#topic1">Highlight #1</a>
+                        <a href="#VersionControlSystem">Version Control System</a>
                     </li>
                     <li>
-                        <a href="#topic2">Hightlight #2</a>
+                        <a href="#RemoteRepository">Remote Repository</a>
                     </li>
                     <li>
-                        <a href="#topic3">Hightlight #3</a>
+                        <a href="#LocalRepository">Local Repository</a>
                     </li>
                     <li>
-                        <a href="#topic4">Hightlight #4</a>
+                        <a href="Git">GIT</a>
                     </li>
                     <li>
-                        <a href="#topic5">Hightlight #5</a>
+                        <a href="#GitCommands">Basic GIT Commands</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
         <div class="headline">
             <div class="container">
                 <h2>Lesson 3 Highlights</h2>
-                <h3>INSERT YOUR NAME</h3>
+                <h3>Paul Woodley</h3>
             </div>
         </div>
     </header>
@@ -78,56 +78,85 @@
         <hr class="featurette-divider">
 
         <!-- First Featurette -->
-        <div class="featurette" id="topic1">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Highlight #1
-                <span class="text-muted">Topic 1 Header</span>
+        <div class="featurette" id="VersionControlSystem">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/distributedVCS.png">
+            <h2 class="featurette-heading">Version Control System 
+                <span class="text-muted">Source Control Management/ Revision Control</span>
+            <p class="lead"> <strong>Version control systems</strong> work to give users better access to past versions of files. Previously, users would have to save multiple file with varying names and dates, creating more room for inconsistencies and error. It also disables multiple users from working on the same files at once. VCS uses one main repository where a single user, and multiple users, can check out files, edit them, and "commit" them back into the repository. Benefits of this technology include knowledge of: who edited the file, when they changed it, what they changed, and ability to merge the changes to the same file. This enables a virtual community that can work effieciently together on the same project using separate devices, without losing previous edits. Amazing! </p>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
-        <div class="featurette" id="topic2">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Highlight #2
-                <span class="text-muted">Topic 2 Header</span>
+        <div class="featurette" id="RemoteRepository">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/remoteRepository.png">
+            <h2 class="featurette-heading">Remote Repository
+                <span class="text-muted">Multiple GIT Users</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">In short, a <strong>remote repostitory</strong> is a repostiory that accesed on a remote server, via the internet, and shared amongst authorized team members. It is understood as versions of a project hosted on the internet or alternate network. This is the common ground between users working on the same project, as it allows users to push, pull, and fetch information from each of the repositories shared. It is critical for users to understand how to push (git add), or put information into the remote server for team to access, and pull(git fetch), or add information into your repository for inspection, and ability to merge information. </p>
         </div>
 
         <hr class="featurette-divider">
-
         <!-- Third Featurette -->
-        <div class="featurette" id="topic3">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Highlight #3
-                <span class="text-muted">Topic 3 Header</span>
+        <div class="featurette" id="LocalRepository">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/localRepository.png">
+            <h2 class="featurette-heading"> Local Repository
+                <span class="text-muted"> Single GIT User</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">A local repository is a repository that is located on the local machine of a user. This is the users perosonal copy of the repository for the user to edit aspects about the code. To create a local repository, one option is to use <strong>Git init</strong> to initialize the repository. Once done editing, the user can add the code to the staging area, using <strong>Git add</strong>, then commit the changes to the repository, using <strong>Git commit</strong>.After committed, the user can push the changes made in the local repository to the remote repository utilizing <strong>Git commit</strong>. The other method involves cloning a repository, using <strong> Git clone</strong>, and follow the same steps as if they used Git init. </p>
         </div>
         
         <hr class="featurette-divider">
         
+
        <!-- Fourth Featurette -->
-        <div class="featurette" id="topic4">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Highlight #4
-                <span class="text-muted">Topic 4 Header</span>
+        <div class="featurette" id="Git">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/GITHubLogo.png">
+            <h2 class="featurette-heading">What is GIT
+                <span class="text-muted">Understanding the Best VCS</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">GIT was created in 2005 by innovator Linus Torvalds, when he wanted to create an environment where single and multiple content creators are able to update files simultaneously, and effienciently. To do this, a <strong>Distributed Version Control System</strong> is used. This allows for remote repository to house all information, while users operating on a local repository can update the remote repository on their device. Since every clone,  or branch, of the repository is saved on each local device, it nullifies the ability to loose all data, because it can be restored by one of the copies. Working in one branch will not show up in the remote repository unitl it is merged into other branches and commited to remote repository. Benefits of GIT include a complete copy of the remote repository stored on the local repository and, the use of a local repository enabling the user to edit content offline. </p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Fifth Featurette -->
-        <div class="featurette" id="topic5">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Highlight #5
-                <span class="text-muted">Topic 5 Header</span>
+        <div class="featurette" id="GitCommands">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/GITHubCommands.png">
+            <h2 class="featurette-heading">Basic GIT Commands
+                <span class="text-muted">How to use GIT</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead"> GIT has numerous commands that enable the user many tools to work on their project more effieciently. Here is a list of <strong>basic commands</strong> along with their funtion.
+            <ul>
+                <li>
+                    <strong>GIT config -- global user.name</strong> and 
+                    <strong>GIT config -- global user.email</strong> are used to configure the name and email address associated with commits made to the remote repository.
+                </li>
+                <li>
+                    <strong>GIT init </strong> is used to create a new local repository
+                </li>
+                <li>
+                <strong>GIT add </strong> is used to add one or more files to the staging area in GIT
+                </li>
+                <li>
+                <strong>GIT commit </strong> is used to commit the changes made to the file to the head, or current branch. This does not save the changes to the remote repository yet
+                </li>
+                <li>
+                <strong>GIT push </strong> is used for sending the changes made in the master branch to the remote repository
+                </li>
+                <li>
+                <strong>GIT checkout </strong> is used to toggle between each branch in the local repository
+                </li>
+                <li>
+                <strong>GIT pull </strong> is used to fetch and merge all changes in the remote repository into the local repository
+                </li>
+                <li>
+                <strong>GIT merge </strong> is used to merge a seperate branch into the current branch used.
+                </li>
+            </ul>
+            
+            </p>
         </div>
 
         <hr class="featurette-divider">
@@ -136,7 +165,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; 2017</p>
+                    <p>Copyright &copy; 2018</p>
                 </div>
             </div>
         </footer>
